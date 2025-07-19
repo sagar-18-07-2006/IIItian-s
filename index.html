@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It is the portfolio Website created for 
+        the Hackathon Of Buildofolio">
+    <title> Sagar Portfolio</title>
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <div id="loading">
+        <span>Initializing Portfolio...</span>
+        <div id="progress-container">
+            <div id="progress"></div>
+        </div>
+    </div>
+
+    <div id="ui">
+        <div id="info">Shape: Sphere (Click to morph)</div>
+    </div>
+
+    <div id="controls">
+        <button id="shape-btn">Change Shape</button>
+
+        <div id="color-picker">
+            <div class="color-option" data-scheme="fire"
+                style="background: linear-gradient(to bottom right, #ff4500, #ffcc00)"></div>
+            <div class="color-option" data-scheme="neon"
+                style="background: linear-gradient(to bottom right, #ff00ff, #00ffff)"></div>
+            <div class="color-option" data-scheme="nature"
+                style="background: linear-gradient(to bottom right, #00ff00, #66ffcc)"></div>
+            <div class="color-option" data-scheme="rainbow"
+                style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)"></div>
+        </div>
+    </div>
+
+    <canvas id="webglCanvas"></canvas>
+
+    <!-- Portfolio Content -->
+    <header class="header">
+        <div class="logo">Sagar</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">☰</button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Full Stack Developer &amp; CS Student</h1>
+                <p class="hero-description">
+                    I build innovative digital solutions using modern technologies with a focus on clean code and user
+                    experience.
+                </p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img">
+                    <i class="fas fa-user-circle" style="font-size: 18rem; color: rgba(255,255,255,0.1);"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Bingbox Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3 class="project-title">Bingbox Movie Search</h3>
+                <span class="project-date">Jan 2023 - Mar 2023</span>
+                <div class="project-tech">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">TMDB API</span>
+                </div>
+                <p>A movie discovery platform with real-time search and recommendations using the TMDB database.</p>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="project-title">E-Commerce Store</h3>
+                <span class="project-date">Apr 2023 - Jun 2023</span>
+                <div class="project-tech">
+                    <span class="tech-item">MERN Stack</span>
+                    <span class="tech-item">Redux</span>
+                    <span class="tech-item">Stripe API</span>
+                </div>
+                <p>Full-featured online shopping platform with payment integration and inventory management.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="project-title">Task Management App</h3>
+                <span class="project-date">Jul 2023 - Sep 2023</span>
+                <div class="project-tech">
+                    <span class="tech-item">Vue.js</span>
+                    <span class="tech-item">Firebase</span>
+                    <span class="tech-item">JWT</span>
+                </div>
+                <p>Collaborative task management system with real-time updates and team collaboration features.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="project-title">Financial Dashboard</h3>
+                <span class="project-date">Oct 2023 - Dec 2023</span>
+                <div class="project-tech">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">D3.js</span>
+                    <span class="tech-item">Express</span>
+                </div>
+                <p>Interactive financial data visualization dashboard with real-time updates and analytics.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="project-title">AI Chatbot</h3>
+                <span class="project-date">Jan 2024 - Mar 2024</span>
+                <div class="project-tech">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">TensorFlow</span>
+                    <span class="tech-item">WebSockets</span>
+                </div>
+                <p>Natural language processing chatbot with sentiment analysis and personalized responses.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="project-title">Fitness Tracker App</h3>
+                <span class="project-date">Apr 2024 - Present</span>
+                <div class="project-tech">
+                    <span class="tech-item">React Native</span>
+                    <span class="tech-item">Firebase</span>
+                    <span class="tech-item">Health API</span>
+                </div>
+                <p>Mobile application for tracking workouts, nutrition, and health metrics with personalized plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.2rem;">
+            Have a project in mind or want to discuss opportunities? Feel free to reach out!
+        </p>
+        <div class="contact-links">
+            <a href="mailto:sagarmaheshwari650@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/sagar-18-07-2006" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sagar-maheshwari-27665b335/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/Sagar182006?t=C7VJLoAf0Y40sIKIaF9-cA&s=08" target="_blank" class="contact-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Sagar Maheshwari. All rights reserved.</p>
+        <p>Designed and developed with ❤️</p>
+    </footer>
+
+</body>
+
+</html>
